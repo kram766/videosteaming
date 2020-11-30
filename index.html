@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality stream</title>
+    <style>
+        .container{
+            width: 100%;
+            display: inline-block;
+        }
+        header{
+            text-align: center;
+            font-size: 41px;
+            font-family: sans-serif;
+        }
+        header >p{
+            margin-top: 30px;
+        }
+        .search_barContent{
+            display: flex;
+            justify-content: center;
+        }
+        .searchbar >input[type="text"]{
+            padding: 10px 150px;
+            font-family: system-ui;
+            font-size: 18px;
+            outline: none;
+        }
+        .search_button >a{
+            display: inline-block;
+            background-color: darkorange;
+            padding: 15px 43px;
+            color: white;
+            font-family: sans-serif;
+        }
+        .search_button >a:hover{
+            background-color: orangered;
+        }
+        #clickthis{
+            display: inline-block;
+            margin-top: 46px;
+
+        }
+        #clickthis >img{
+            height: 150px;
+        }
+        #clickthis:hover{
+            cursor: pointer;
+            color: red;
+            text-decoration: underline;
+        }
+        #clickthis >p{
+            margin: 5px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>Quality stream</p>
+        </header>
+        <div class="search_barContent">
+            <div class="searchbar">
+                <input type="text" placeholder="Seach exclusive movies">
+            </div>
+            <div class="search_button">
+                <a>Search</a>
+            </div>
+        </div>
+    </div>
+    <div id="clickthis">
+        <img src="./assest/megatron scene.PNG">
+        <p>Megatron exclusive scene</p>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
